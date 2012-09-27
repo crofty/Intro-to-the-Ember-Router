@@ -1,0 +1,5 @@
+<ul>
+  {{#each contact in controller}}
+    <li><a {{action showContact contact href=true}}>{{contact.name}}</a></li>
+  {{/each}}
+</ul>

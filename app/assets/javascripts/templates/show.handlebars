@@ -1,0 +1,17 @@
+<h2>{{name}}</h2>
+
+<img {{bindAttr src="photo"}}/>
+<dl>
+  <dt>Bio</dt>
+  <dd>{{bio}}</dd>
+  <dt>City</dt>
+  <dd>{{city}}</dd>
+  <dt>Topics</dt>
+  <dd>
+    <ul>
+      {{#each topic in topics}}
+        <li>{{topic}}</li>
+      {{/each}}
+    </ul>
+  </dd>
+</dl>
